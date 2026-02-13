@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Menu - Chuks Kitchen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Chuks Kitchen</a>
+        <ul class="nav-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="explore.html">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a href="login.html" class="sign-in-btn">Sign In</a>
+        </div>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section style="padding: 2rem 0;">
+        <h1>Explore Our Menu</h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem;">Discover authentic Nigerian dishes prepared with love and fresh ingredients</p>
+      </section>
+
+      <div style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem; margin-bottom: 3rem;">
+        <!-- FILTER SIDEBAR -->
+        <aside>
+          <div class="filter-section">
+            <div class="filter-group">
+              <label>Categories</label>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-all" checked>
+                  <label for="cat-all">All Items</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-rice">
+                  <label for="cat-rice">Rice Dishes</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-soups">
+                  <label for="cat-soups">Soups & Stews</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-proteins">
+                  <label for="cat-proteins">Proteins</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-sides">
+                  <label for="cat-sides">Sides</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-drinks">
+                  <label for="cat-drinks">Beverages</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label>Price Range</label>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <input type="checkbox" id="price-1">
+                  <label for="price-1">₦1,000 - ₦2,000</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="price-2">
+                  <label for="price-2">₦2,000 - ₦3,500</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="price-3">
+                  <label for="price-3">₦3,500 - ₦5,000</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="price-4">
+                  <label for="price-4">₦5,000+</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label>Special Diets</label>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <input type="checkbox" id="diet-vegan">
+                  <label for="diet-vegan">Vegan</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="diet-vegetarian">
+                  <label for="diet-vegetarian">Vegetarian</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="diet-glutenfree">
+                  <label for="diet-glutenfree">Gluten Free</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="diet-spicy">
+                  <label for="diet-spicy">Spicy</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- MENU ITEMS GRID -->
+        <section>
+          <!-- GRID OF FOOD ITEMS -->
+          <div class="grid grid-3">
+            <!-- JOLLOF RICE WITH CHICKEN -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #ff7a00, #ffa533); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍚</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Jollof Rice & Chicken</h4>
+                <p class="food-card-description">Aromatic rice with tender chicken and traditional spices</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦4,200</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- EGUSI SOUP -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #935116, #633f0c); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍲</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Egusi Soup</h4>
+                <p class="food-card-description">Melon seed soup with beef and fresh spinach</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦3,800</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- MOIN MOIN -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #f39c12, #d68910); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍲</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Moin Moin</h4>
+                <p class="food-card-description">Steamed bean pudding with peppers and onions</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦1,800</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- PEPPER SOUP -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #e74c3c, #c0392b); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌶️</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Pepper Soup</h4>
+                <p class="food-card-description">Aromatic broth with herbs and assorted proteins</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦2,800</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUYA MEAT -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #a93226, #7b241c); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🥩</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Suya</h4>
+                <p class="food-card-description">Grilled meat with special peanut spice blend</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦3,500</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- EFO RIRO -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #2ecc71, #27ae60); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🥣</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Efo Riro</h4>
+                <p class="food-card-description">Butternut squash stew with spinach and protein</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦3,200</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- FRIED RICE -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #f39c12, #e67e22); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍚</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Fried Rice</h4>
+                <p class="food-card-description">Fluffy rice with vegetables and seasoning</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦2,800</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- OKRA SOUP -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #27ae60, #229954); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍲</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Okra Soup</h4>
+                <p class="food-card-description">Smooth okra soup with beef and seasonings</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦3,200</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- GARI & VEGETABLE SOUP -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #d4a574, #a0826d); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🥘</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Gari & Vegetable Soup</h4>
+                <p class="food-card-description">Cassava meal with leafy vegetable soup</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦2,500</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- GROUNDNUT SOUP -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #8b4513, #654321); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🥜</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Groundnut Soup</h4>
+                <p class="food-card-description">Rich peanut soup with meat and vegetables</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦3,500</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TILAPIA PEPPER SOUP -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #3498db, #2980b9); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🐟</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Tilapia Pepper Soup</h4>
+                <p class="food-card-description">Fresh tilapia in aromatic pepper broth</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦4,500</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- POUNDED YAM -->
+            <div class="food-card">
+              <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #d4a574, #c19a6b); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍲</div>
+              <div class="food-card-body">
+                <h4 class="food-card-title">Pounded Yam & Soup</h4>
+                <p class="food-card-description">Smooth pounded yam with any soup of choice</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price">₦3,200</span>
+                  <button class="btn btn-primary food-card-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Chuks Kitchen</div>
+          <p class="footer-description">Bringing the authentic flavors of Nigerian cuisine right to your doorstep.</p>
+          <ul class="social-links">
+            <li><a href="#" title="Facebook">f</a></li>
+            <li><a href="#" title="Twitter">𝕏</a></li>
+            <li><a href="#" title="Instagram">📷</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="tel:+2348012345678">+234 (0) 801-234-5678</a></li>
+            <li><a href="mailto:hello@chukskitchen.com">hello@chukskitchen.com</a></li>
+            <li>Lagos, Nigeria</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Chuks Kitchen - All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-to-top">↑</button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

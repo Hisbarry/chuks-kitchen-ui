@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Chuks Kitchen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Chuks Kitchen</a>
+        <ul class="nav-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="explore.html">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a href="login.html" class="sign-in-btn">Sign In</a>
+        </div>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- SEARCH SECTION -->
+      <section class="search-section">
+        <h2 style="margin-bottom: 1.5rem;">Welcome to Chuks Kitchen!</h2>
+        <div class="search-box">
+          <input 
+            type="text" 
+            placeholder="Search for dishes, ingredients..." 
+            id="search-input"
+          >
+          <button type="button">Search</button>
+        </div>
+      </section>
+
+      <!-- PROMOTIONAL BANNER -->
+      <section style="margin-bottom: 3rem;">
+        <div class="promo-banner">
+          <h3>🎉 Special Offer!</h3>
+          <p>Get 20% off your first order! Use code: <strong>CHUKSKEY20</strong></p>
+        </div>
+      </section>
+
+      <!-- CATEGORIES SECTION -->
+      <section style="margin-bottom: 3rem;">
+        <h3 class="section-title">Categories</h3>
+        <div class="categories">
+          <button class="category-btn active">All</button>
+          <button class="category-btn">Rice Dishes</button>
+          <button class="category-btn">Soups & Stews</button>
+          <button class="category-btn">Proteins</button>
+          <button class="category-btn">Sides</button>
+          <button class="category-btn">Beverages</button>
+          <button class="category-btn">Desserts</button>
+        </div>
+      </section>
+
+      <!-- FEATURED/CHEF'S SPECIALS SECTION -->
+      <section style="margin-bottom: 3rem;">
+        <h3 class="section-title">Chef's Specials</h3>
+        <div class="grid grid-3">
+          <!-- JOLLOF RICE -->
+          <div class="food-card">
+            <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #ff7a00, #ffa533); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍚</div>
+            <div class="food-card-body">
+              <h4 class="food-card-title">Jollof Rice</h4>
+              <p class="food-card-description">Aromatic jasmine rice cooked with tomato sauce, peppers and spices</p>
+              <div class="food-card-footer">
+                <span class="food-card-price">₦2,500</span>
+                <button class="btn btn-primary food-card-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- EFO RIRO -->
+          <div class="food-card">
+            <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #2ecc71, #27ae60); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🥣</div>
+            <div class="food-card-body">
+              <h4 class="food-card-title">Efo Riro</h4>
+              <p class="food-card-description">Butternut squash stew with spinach, tomatoes and protein</p>
+              <div class="food-card-footer">
+                <span class="food-card-price">₦3,200</span>
+                <button class="btn btn-primary food-card-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PEPPER SOUP -->
+          <div class="food-card">
+            <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #e74c3c, #c0392b); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌶️</div>
+            <div class="food-card-body">
+              <h4 class="food-card-title">Pepper Soup</h4>
+              <p class="food-card-description">Aromatic broth with fresh herbs, ginger and assorted proteins</p>
+              <div class="food-card-footer">
+                <span class="food-card-price">₦2,800</span>
+                <button class="btn btn-primary food-card-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOI MOI -->
+          <div class="food-card">
+            <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #f39c12, #d68910); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍲</div>
+            <div class="food-card-body">
+              <h4 class="food-card-title">Moi Moi</h4>
+              <p class="food-card-description">Steamed bean pudding with peppers, onions and spices</p>
+              <div class="food-card-footer">
+                <span class="food-card-price">₦1,800</span>
+                <button class="btn btn-primary food-card-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUYA -->
+          <div class="food-card">
+            <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #a93226, #7b241c); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🥩</div>
+            <div class="food-card-body">
+              <h4 class="food-card-title">Suya</h4>
+              <p class="food-card-description">Grilled meat seasoned with special peanut spice mix</p>
+              <div class="food-card-footer">
+                <span class="food-card-price">₦3,500</span>
+                <button class="btn btn-primary food-card-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- EGUSI SOUP -->
+          <div class="food-card">
+            <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #935116, #633f0c); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🍲</div>
+            <div class="food-card-body">
+              <h4 class="food-card-title">Egusi Soup</h4>
+              <p class="food-card-description">Rich melon seed soup with beef, spinach and traditional spices</p>
+              <div class="food-card-footer">
+                <span class="food-card-price">₦3,800</span>
+                <button class="btn btn-primary food-card-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK LINKS SECTION -->
+      <section style="margin-bottom: 3rem; background-color: var(--light); padding: 2rem; border-radius: 8px;">
+        <h3 class="section-title">Quick Links</h3>
+        <div class="grid grid-4">
+          <a href="explore.html" class="btn btn-secondary">Browse Full Menu</a>
+          <a href="#" class="btn btn-secondary">Track Order</a>
+          <a href="#" class="btn btn-secondary">View Cart</a>
+          <a href="explore.html" class="btn btn-secondary">Special Diet</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Chuks Kitchen</div>
+          <p class="footer-description">Bringing the authentic flavors of Nigerian cuisine right to your doorstep.</p>
+          <ul class="social-links">
+            <li><a href="#" title="Facebook">f</a></li>
+            <li><a href="#" title="Twitter">𝕏</a></li>
+            <li><a href="#" title="Instagram">📷</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="tel:+2348012345678">+234 (0) 801-234-5678</a></li>
+            <li><a href="mailto:hello@chukskitchen.com">hello@chukskitchen.com</a></li>
+            <li>Lagos, Nigeria</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Chuks Kitchen - All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-to-top">↑</button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
